@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./Libs/angular.min.js"></script>
+     <title>Document</title>
+    <script src="./Button.js"></script>
+     <script src="./app.js"></script>
+  
+    <script src="factory.js"></script>
+    <script src="./controller.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+</head>
+<body ng-app="Myapp" ng-controller="Myctrl">
+        <h1>TIC TAC TOE {{title}}</h1>
+        <h2>Player : <span id="pn">{{PN}}</span></h2>
+        <div>
+                 <table> 
+                    <tr>
+                        <td><button ng-click="C1()">{{Val1}}</button></td>
+                        <td><button ng-click="C2()" >{{Val2}}</button></td>
+                        <td><button ng-click="C3()">{{Val3}}</button></td>
+                    </tr>
+                    <tr>
+                        <td><button ng-click="C4()">{{Val4}}</button></td>
+                        <td><button ng-click="C5()">{{Val5}}</button></td>
+                        <td><button ng-click="C6()">{{Val6}}</button></td>
+                    </tr>
+                    <tr>
+                        <td><button ng-click="C7()">{{Val7}}</button></td>
+                        <td><button ng-click="C8()">{{Val8}}</button></td>
+                        <td><button ng-click="C9()">{{Val9}}</button></td>
+                    </tr>
+                </table>
+            </div>
+            <h2 id="Ans">{{GO}}</h2>
+            <h1 id="Winp">{{CN}}</h1> 
+</body>
+</html>
